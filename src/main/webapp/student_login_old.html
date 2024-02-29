@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT LOGIN</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin:6%;/* Remove default body padding */
+            background-image: linear-gradient(rgba(248, 243, 243, 0.7), rgba(248, 243, 243, 0.7)), url(https://c0.wallpaperflare.com/preview/802/871/785/ford-buildings-berry-college-education-north-carolina.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .main-wrapper {
+            margin-top: 100px;
+        }
+
+        .auth-box {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+            box-sizing: border-box;
+            width: 80%;
+            height: 40%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .modal-bg-img {
+            height: 185vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .bg-white {
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        .btn-danger {
+            background-color: #dc3545;
+            color: #fff;
+            border: none;
+            padding: 8px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .mt-5 {
+            margin-top: 5px;
+        }
+
+        .text-danger {
+            color: #dc3545;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="auth-box bg-white">
+            <center><img src="https://png.pngtree.com/png-vector/20230423/ourmid/pngtree-student-login-blue-gradient-concept-icon-thin-resource-icon-vector-png-image_51465858.jpg" alt="CEG Image"></center>
+            <h2 class="text-center">Student Login</h2>
+
+            <form method="POST" action="studentLoginCheck">
+                <div class="form-group">
+                    <input class="form-control" name="sid" type="number" placeholder="Student Id" required>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" name="password" type="password" placeholder="Password" required>
+                </div>
+                <div class="text-center">
+                    <button type="submit" name="login" class="btn btn-danger">Login</button>
+                </div>
+                <div class="text-center mt-5">
+					<a href="student_login_new.html" class="text-danger">New Student-Sign up</a><br><br>
+                    <a href="admin.html" class="text-danger">Admin Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<html>
+
+<head>
+	<title>HOSTEL ADMISSION FORM</title>
+	<link rel="stylesheet" type="text/css" href="dbms.css" />
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #ffffff;
+			background-image: linear-gradient(rgba(248, 243, 243, 0.5), rgba(248, 243, 243, 0.5)), url(https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?cs=srgb&dl=pexels-aleksandar-pasaric-325185.jpg&fm=jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+		}
+
+		center {
+			background-color: aqua;
+			opacity:0.5;
+			border: 2px solid #000000;
+			padding: 20px;
+			margin: 20px;
+			max-width: 600px;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+			border-radius:10px;
+		}
+
+		img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-left: 43%; /* Add some space below the image */
+        }
+
+		h1 {
+			color: #000000;
+		}
+
+		h2{
+			color:#4CAF50;
+			text-align:center;
+		}
+
+		input[type=number],
+		input[type=text],
+		input[type=date],
+		input[type=file],
+		input[type=email] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+		}
+
+		input[type=submit] {
+			background-color: rgb(66, 2, 2);
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+		}
+
+		input[type=submit]:hover {
+			opacity: 0.8;
+		}
+
+		label{
+			display:block;
+			text-align:left;
+			color: solid black;
+		}
+
+		.box{
+			margin-left:30%;
+		}
+
+	</style>
+</head>
+
+<body class="b">
+		<br><br>
+		<img src="https://ceg.annauniv.edu/assets/images/CEG_col.png">
+		<br><br>
+		<h1 style="text-align:center;">COLLEGE OF ENGINEERING GUINDY HOSTELS</h1>
+		<br>
+		<h2>GIVE THE DETAILS OF THE NEW STUDENT:</h2><br><br>
+		<div class="box">
+		<center>
+		<form action="studentDetails" method="post" style="background-color: aqua;" enctype="multipart/form-data">
+			<label name="sid">STUDENT ID:</label>
+			<input type="number" name="sid" /><br><br>
+			<label name="fname">FIRST NAME:</label>
+			<input type="text" name="fname" /><br><br>
+			<label name="lname">LAST NAME:</label>:</label>
+			<input type="text" name="lname" /><br><br>
+			<label name="gender">GENDER:</label>:</label>
+			<input type="text" name="gender" /><br><br>
+			<label name="father">FATHER NAME:</label>
+			<input type="text" name="father" /><br><br>
+			<label name="dob">DATE OF BIRTH:</label>
+			<input type="date" name="dob" /><br><br>
+			<label name="email">STUDENT_EMAIL_ID:</label>
+			<input type="email" name="email" /><br><br>
+			<label name="branch">BRANCH</label>
+			<input type="text" name="branch" /><br><br>
+			<label name="year">YEAR</label>
+			<input type="text" name="year" /><br><br>
+			<label name="mess">MESS ID:</label>
+			<input type="text" name="mess" /><br><br>
+			<label name="hostel">HOSTEL ID:</label>
+			<input type="text" name="hostel" /><br><br>
+			<label name="room">ROOM NO:</label>
+			<input type="text" name="room" /><br><br>
+			<label name="photo">UPLOAD STUDENT PHOTO HERE:</label>
+			<input type="file" name="photo" value="click to choose file">
+			<input type="submit" value="Submit" />
+		</form>
+		<button><a href="DBMS.html">GO BACK</a></button>
+	</center>
+		</div>
+</body>
+
+</html>

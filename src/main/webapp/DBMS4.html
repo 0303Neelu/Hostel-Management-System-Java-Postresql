@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DELETE STUDENT DETAILS</title>
+    <style>
+        body {
+            background: #f4f4f4;
+			background-image: linear-gradient(rgba(248, 243, 243, 0.7), rgba(248, 243, 243, 0.7)), url(https://assets-global.website-files.com/6375599d46ebdb3693772f47/63ec8b8f50c0545a5c335981_closeup-candidate-giving-his-cv-job-interview-office_webp.webp);
+			background-repeat: no-repeat;
+            background-size: cover;
+			color: #333;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            border: 2px solid #3498db;
+            border-radius: 10px;
+            background-color: rgba(255,255,255,0.5);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        h1 {
+            color: #3498db;
+        }
+
+        p {
+            color: #555;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input {
+            margin: 5px;
+            padding: 10px;
+            width: 200px;
+            border: 1px solid #3498db;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #3498db;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://ceg.annauniv.edu/assets/images/CEG_col.png" alt="VIT Image">
+        <h1>COLLEGE OF ENGINEERING GUINDY HOSTELS</h1>
+        <p>GIVE THE REGISTRATION NUMBER OF THE STUDENT FOR WHICH YOU WANT TO DELETE THE RECORDS:</p>
+        <form action="deleteStudent" method="post">
+            <label for="sid">STUDENT ID:</label>
+            <input type="number" name="sid" id="sid" required/><br><br>
+            <input type="submit" value="Submit"/>
+        </form>
+        <button><a href="DBMS.html">GO BACK</a></button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDIVIDUAL STUDENT DETAILS</title>
+    <style>
+        body {
+            background-color: rgba(248, 243, 243, 0.2);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-image: linear-gradient(rgba(248, 243, 243, 0.8), rgba(248, 243, 243, 0.8)), url(https://images.unsplash.com/photo-1456324463128-7ff6903988d8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        p {
+            color: rgb(249, 4, 192);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #1ad753;
+        }
+
+        .b {
+            padding: 20px;
+        }
+
+        .f {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 20px;
+            border: 2px solid #3498db;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #ecf0f1;
+            opacity: 0.8;
+            text-align: left;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 200px;
+            padding: 8px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #3498db;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+
+<body class="b">
+    <center>
+        <br><br>
+        <img src="https://ceg.annauniv.edu/assets/images/CEG_col.png" alt="VIT Logo">
+        <br><br>
+        <h1>COLLEGE OF ENGINEERING GUINDY HOSTELS</h1>
+        <br>
+        <p>ENTER THE BELOW DETAILS TO SEE THE INDIVIDUAL ROOM DETAILS</p><br><br>
+        <form class="f" action="getRoomDetails" method="post">
+            <label for="hostel">HOSTEL NAME:</label>
+            <input type="text" id="hostel" name="hostel" required><br><br>
+            <label for="room">ROOM NO:</label>
+            <input type="number" id="room" name="room" required><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </center>
+    <center>
+		<button><a href="DBMS.html">GO BACK</a></button>
+	</center>
+</body>
+
+</html>

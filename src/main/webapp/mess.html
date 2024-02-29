@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>UPDATE MESS</title>
+	<link rel="stylesheet" type="text/css" href="dbms.css" />
+	<style>
+		body {
+			background-image: linear-gradient(rgba(248, 243, 243, 0.7), rgba(248, 243, 243, 0.7)), url(https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-repeat: no-repeat;
+            background-size: cover;
+			/* Replace these colors with your desired gradient */
+			color: #fff;
+			font-family: 'Arial', sans-serif;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+
+		.container {
+			text-align: center;
+			padding: 20px;
+			border: 2px solid #fff;
+			border-radius: 10px;
+			background-color: rgba(255, 255, 255, 0.1);
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			margin-left:20px;
+			border-left:10px;
+			border-right:10px;
+			border-top:10px;
+			border-bottom:10px;
+		}
+
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+
+		h1 {
+			color: #544b4b;
+		}
+		
+		p{
+			color:rgb(46, 6, 6);
+		}
+
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		input {
+			margin: 5px;
+			padding: 10px;
+			width: 200px;
+			background-color:aliceblue;
+		}
+
+		label{
+			color:rgb(0, 126, 126);
+		}
+
+		input[type="submit"] {
+			background-color: #d2c424;
+			color:rgb(4, 79, 54);
+			cursor: pointer;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #02f065;
+		}
+	</style>
+</head>
+
+<body>
+		<center><img src="https://ceg.annauniv.edu/assets/images/CEG_col.png" alt="CEG Image"></center>
+		<div class="container">
+		<h1>COLLEGE OF ENGINEERING GUINDY</h1>
+		<p>ENTER THE REGISTRATION NUMBER OF THE STUDENT WHOSE RECORD YOU WANT TO UPDATE AND ENTER THE UPDATED MESS ID:
+</p>
+		<form action="changeMess" method="post">
+			<table>
+				<tr>
+					<th>
+						<label for="sid">STUDENT ID:</label>
+					</th>
+					<td>
+						<input type="number" name="sid" id="sid" /><br><br>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label for="mess">MESS ID:</label>
+					</th>
+					<td>
+						<input type="number" name="mess" id="mess" /><br><br>
+					</td>
+				</tr>
+				<tr>
+					<th colspan="2">
+						<input type="submit" value="Submit" />
+					</th>
+				</tr>
+			</table>
+		</form>
+		<button><a href="DBMS3.html">GO BACK</a></button>
+	</div>
+</body>
+
+</html>
